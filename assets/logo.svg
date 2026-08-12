@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Jumpin logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffc9d1"/>
+      <stop offset="1" stop-color="#ff8da0"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#202020"/>
+  <path d="M38 16h6v22c0 6.6-5.4 12-12 12-5.6 0-10.4-3.9-11.7-9.1l5.8-1.5A6.2 6.2 0 0 0 32 44c3.3 0 6-2.7 6-6V16Z" fill="url(#g)"/>
+  <circle cx="24" cy="20" r="4" fill="#ffe6ea"/>
+</svg>

@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────
+   Theme cua Jumpin — doi mau o day la doi ca site
+   ───────────────────────────────────────────── */
+@theme {
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  /* Nen toi */
+  --color-ink-950: #0d0d0d;
+  --color-ink-900: #141414;
+  --color-ink-850: #1a1a1a;
+  --color-ink-800: #202020;
+  --color-ink-700: #2b2b2b;
+
+  /* Mau nhan (hong pastel) */
+  --color-blush-100: #ffe6ea;
+  --color-blush-200: #ffc9d1;
+  --color-blush-300: #ffabb9;
+  --color-blush-400: #ff8da0;
+
+  --color-muted: #8f8f8f;
+
+  --animate-fade-up: fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-display);
+    background-color: var(--color-ink-900);
+    color: #f2f2f2;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-blush-300);
+    color: var(--color-ink-950);
+  }
+
+  /* Scrollbar cho khop tone toi */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-ink-900);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-ink-700);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a3a3a;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-blush-300);
+    outline-offset: 3px;
+  }
+
+  /* Ton trong cai dat giam hieu ung cua he thong */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Link tren thanh nav */
+  .nav-link {
+    position: relative;
+    padding-bottom: 0.375rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--color-muted);
+    transition: color 0.2s ease;
+  }
+  .nav-link:hover {
+    color: var(--color-blush-200);
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+  }
+  .nav-link:hover::after {
+    transform: scaleX(0.6);
+  }
+  .nav-link[aria-current="page"] {
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .nav-link[aria-current="page"]::after {
+    background-color: #ffffff;
+    transform: scaleX(1);
+  }
+
+  /* Icon mang xa hoi */
+  .social-icon {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    color: #6f6f6f;
+    transition: color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+  }
+  .social-icon:hover {
+    color: var(--color-blush-200);
+    background-color: var(--color-ink-800);
+    transform: translateY(-2px);
+  }
+  .social-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+  }
+
+  /* The noi dung (project / member) */
+  .card {
+    border: 1px solid var(--color-ink-700);
+    border-radius: 1rem;
+    background-color: var(--color-ink-850);
+    overflow: hidden;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+  }
+  /* Chi nhac the len khi co chuot (mobile khong co hover) */
+  @media (hover: hover) {
+    .card:hover {
+      border-color: var(--color-blush-300);
+      transform: translateY(-4px);
+    }
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.125rem 0.625rem;
+    border-radius: 9999px;
+    border: 1px solid var(--color-ink-700);
+    background-color: var(--color-ink-800);
+    font-size: 0.75rem;
+    color: #b8b8b8;
+  }
+
+  /* Duong ke hong duoi hero */
+  .rule {
+    height: 3px;
+    border-radius: 9999px;
+    background-color: var(--color-blush-200);
+  }
+}
+
+@layer utilities {
+  /* An scrollbar — dung cho thanh loc cuon ngang tren mobile */
+  .snap-x {
+    scrollbar-width: none;
+  }
+  .snap-x::-webkit-scrollbar {
+    display: none;
+  }
+}

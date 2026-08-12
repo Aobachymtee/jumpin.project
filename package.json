@@ -1,0 +1,15 @@
+{
+  "name": "jumpin-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website gioi thieu fan-team Jumpin",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/style.css --minify",
+    "serve": "npx --yes serve . -l 5173"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}

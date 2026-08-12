@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#141414" />
+    <title>Jumpin — Fan-team tổ chức event phi lợi nhuận</title>
+    <meta
+      name="description"
+      content="Jumpin là fan-team phi lợi nhuận, tổ chức event và các hoạt động cộng đồng dành cho người hâm mộ."
+    />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+
+  <body class="flex min-h-screen flex-col bg-ink-900">
+    <!-- ══ Header ══ -->
+    <header class="sticky top-0 z-40 border-b border-ink-800/80 bg-ink-900/90 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-5 sm:py-4">
+        <a href="index.html" class="flex items-center gap-3" data-brand></a>
+
+        <nav class="hidden items-center gap-10 md:flex" aria-label="Điều hướng chính">
+          <a href="index.html" class="nav-link" aria-current="page">Home</a>
+          <a href="project.html" class="nav-link">Project</a>
+          <a href="member.html" class="nav-link">Member</a>
+          <a href="contact.html" class="nav-link">Liên hệ</a>
+        </nav>
+
+        <button
+          id="menu-btn"
+          type="button"
+          class="rounded-lg p-2 text-neutral-300 hover:bg-ink-800 md:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Mở menu"
+        >
+          <svg data-icon-open class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg data-icon-close class="hidden h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <nav id="mobile-menu" class="hidden border-t border-ink-800 px-4 py-2 md:hidden">
+        <a href="index.html" class="block border-b border-ink-800/60 py-3 font-medium text-white last:border-0">Home</a>
+        <a href="project.html" class="block border-b border-ink-800/60 py-3 text-neutral-400 transition hover:text-blush-200 last:border-0">Project</a>
+        <a href="member.html" class="block border-b border-ink-800/60 py-3 text-neutral-400 transition hover:text-blush-200 last:border-0">Member</a>
+        <a href="contact.html" class="block border-b border-ink-800/60 py-3 text-neutral-400 transition hover:text-blush-200 last:border-0">Liên hệ</a>
+      </nav>
+    </header>
+
+    <main class="flex-1">
+      <!-- ══ Hero ══ -->
+      <section class="mx-auto flex min-h-[60vh] max-w-5xl flex-col items-center justify-center px-4 py-14 text-center sm:min-h-[68vh] sm:px-5 sm:py-20">
+        <!-- Logo lớn — đổi ảnh trong assets/data.js -->
+        <div
+          id="hero-logo"
+          class="mb-6 grid h-24 w-24 place-items-center overflow-hidden rounded-2xl bg-ink-850 ring-1 ring-ink-700 sm:mb-8 sm:h-36 sm:w-36 sm:rounded-3xl lg:h-40 lg:w-40"
+        ></div>
+        <div id="hero"></div>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-1" data-socials></div>
+        <div class="mt-8 flex w-full max-w-xs flex-col items-stretch gap-3 sm:mt-10 sm:max-w-none sm:flex-row sm:justify-center">
+          <a
+            href="project.html"
+            class="rounded-full bg-blush-200 px-6 py-3 text-center font-semibold text-ink-950 transition hover:bg-blush-100"
+            >Xem các project</a
+          >
+          <a
+            href="member.html"
+            class="rounded-full border border-ink-700 px-6 py-3 text-center font-semibold text-neutral-200 transition hover:border-blush-300 hover:text-blush-200"
+            >Gặp thành viên</a
+          >
+        </div>
+      </section>
+
+      <!-- ══ Giới thiệu ══ -->
+      <section class="mx-auto max-w-3xl px-4 py-12 sm:px-5 sm:py-16 text-center opacity-0" data-reveal>
+        <p class="text-sm font-semibold uppercase tracking-widest text-blush-300">Về chúng mình</p>
+        <h2 class="mt-3 text-2xl font-bold text-balance sm:text-4xl">
+          Một team làm event vì cộng đồng
+        </h2>
+        <p id="hero-sub" class="mt-5 text-neutral-400 leading-relaxed"></p>
+        <p class="mt-4 text-neutral-400 leading-relaxed">
+          Toàn bộ hoạt động của team đều phi lợi nhuận. Mọi khoản đóng góp và tài trợ
+          được dùng trọn cho chi phí tổ chức, quà tặng người tham gia hoặc chuyển đến
+          các quỹ thiện nguyện.
+        </p>
+      </section>
+
+      <!-- ══ Project nổi bật ══ -->
+      <section class="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-16 opacity-0" data-reveal>
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-widest text-blush-300">Project</p>
+            <h2 class="mt-2 text-2xl font-bold sm:mt-3 sm:text-4xl">Event gần đây</h2>
+          </div>
+          <a
+            href="project.html"
+            class="text-sm font-medium text-blush-200 transition hover:text-blush-100"
+            >Xem tất cả <span aria-hidden="true">→</span></a
+          >
+        </div>
+        <div id="home-projects" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </section>
+
+      <!-- ══ CTA ══ -->
+      <section class="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-16 opacity-0" data-reveal>
+        <div class="rounded-3xl border border-ink-700 bg-ink-850 px-6 py-10 text-center sm:px-8 sm:py-12">
+          <h2 class="text-xl font-bold text-balance sm:text-3xl">Muốn đồng hành cùng team?</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-neutral-400">
+            Chúng mình luôn mở cửa cho tình nguyện viên mới và các đơn vị muốn hợp tác
+            tổ chức hoạt động cộng đồng.
+          </p>
+          <a
+            href="contact.html"
+            class="mt-7 inline-block w-full max-w-xs rounded-full bg-blush-200 px-7 py-3 font-semibold text-ink-950 transition hover:bg-blush-100 sm:w-auto sm:max-w-none"
+            >Liên hệ ngay</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- ══ Footer ══ -->
+    <footer class="border-t border-ink-800 px-4 py-10 sm:px-5">
+      <div class="mx-auto flex max-w-6xl flex-col items-center gap-4 text-center">
+        <div class="flex items-center gap-3" data-brand></div>
+        <div class="flex flex-wrap justify-center gap-1" data-socials></div>
+        <p class="text-xs text-neutral-500" data-footer-note></p>
+        <p class="text-xs text-neutral-600">
+          © <span data-year></span> <span data-team-name></span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/data.js"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
