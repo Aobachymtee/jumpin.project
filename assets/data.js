@@ -44,7 +44,7 @@ window.SITE = {
       name: "Aoba",
       role: "Event Staff",
       bio: "Đại diện cho các phát biểu cũng như thông báo về các project sắp tới của team.",
-      avatar: "assets/aoba.jpg",
+      avatar: "assets/Aoba.jpg",
     },
     {
       name: "?",
