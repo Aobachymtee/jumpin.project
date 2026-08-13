@@ -6,7 +6,7 @@ window.SITE = {
     tagline: "By fans, for fans and because of fans!",
     heroPrefix: "Chúng mình là",
     heroSub:
-      "một team tổ chức các hoạt động hướng tới các fandom mà chúng mình yêu thích tại TP.HCM",
+      "Một team tổ chức các hoạt động hướng tới các fandom mà chúng mình yêu thích tại TP.HCM",
     // Dòng chữ nhỏ ở footer
     footerNote:
       "Chúng mình làm cho vui và phi lợi nhuận, mọi hình ảnh bản quyền đều thuộc sở hữu của các chủ sỡ hữu gốc!",
@@ -84,6 +84,10 @@ window.SITE = {
       {
         title: "Tài trợ",
         desc: "Hỗ trợ merch, địa điểm hoặc chi phí cho event của chúng mình hay đại loại thế",
+      },
+      {
+        title: "Tham gia cùng chúng mình?",
+        desc: "Nếu bạn muốn làm việc trong một môi trường bị chích điện 24/7 =]]",
       },
     ],
     email: "contact@jumpinproject.com",
