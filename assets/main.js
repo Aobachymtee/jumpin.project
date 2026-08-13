@@ -83,7 +83,7 @@
 
     document.querySelectorAll("[data-brand]").forEach(function (el) {
       el.innerHTML =
-        '<span class="grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-ink-800 ring-1 ring-ink-700">' +
+        '<span class="grid h-10 w-10 shrink-0 place-items-center overflow-hidden">' +
         mark +
         "</span>" +
         '<span class="text-lg font-semibold tracking-tight">' +
@@ -135,7 +135,7 @@
         esc(t.logo) +
         '" alt="Logo ' +
         esc(t.name) +
-        '" class="h-full w-full object-contain p-4">';
+        '" class="h-full w-full object-contain">';
       var img = el.querySelector("img");
       img.addEventListener("error", function () {
         el.innerHTML =
