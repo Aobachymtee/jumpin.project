@@ -69,6 +69,7 @@ window.SITE = {
       role: "?",
       bio: "?",
       avatar: "",
+    },
   ],
 
   /* ---------- Trang "Liên hệ" ---------- */
