@@ -6,7 +6,7 @@ window.SITE = {
     tagline: "By fans, for fans and because of fans!",
     heroPrefix: "Chúng mình là",
     heroSub:
-      "",
+      "Một team tổ chức các hoạt động hướng tới các fandom mà chúng mình yêu thích tại TP.HCM, Cho fan, do fan và vì fan là chăm ngôn của chúng mình!",
     // Dòng chữ nhỏ ở footer
     footerNote:
       "Chúng mình làm cho vui và phi lợi nhuận, mọi hình ảnh bản quyền đều thuộc sở hữu của các chủ sỡ hữu gốc!",
