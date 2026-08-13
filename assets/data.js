@@ -70,6 +70,8 @@ window.SITE = {
       bio: "?",
       avatar: "",
     },
+    }
+
   ],
 
   /* ---------- Trang "Liên hệ" ---------- */
