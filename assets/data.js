@@ -1,33 +1,23 @@
-/* ============================================================
-   DATA CỦA WEBSITE — CHỈ CẦN SỬA FILE NÀY
-   ------------------------------------------------------------
-   Mọi nội dung trên web (tên team, logo, project, thành viên...)
-   đều lấy từ đây. Không cần sửa HTML.
-   ============================================================ */
-
 window.SITE = {
   /* ---------- Thông tin chung ---------- */
   team: {
     name: "Jumpin",
-    // Đổi logo: thay đường dẫn bên dưới bằng file của bồ
-    // (ví dụ "assets/logo.png"). Để trống "" thì hiện chữ cái đầu.
-    logo: "assets/logo.svg",
-    tagline: "Fan-team tổ chức các event & hoạt động phi lợi nhuận",
+    logo: "assets/logo.png",
+    tagline: "By fans, for fans and because of fans!",
     heroPrefix: "Chúng mình là",
     heroSub:
-      "Một fan-team phi lợi nhuận — tổ chức event, mini-game và các hoạt động cộng đồng dành cho người hâm mộ.",
+      "một team tổ chức các hoạt động hướng tới các fandom mà chúng mình yêu thích tại TP.HCM",
     // Dòng chữ nhỏ ở footer
     footerNote:
-      "Fan-made & phi lợi nhuận. Mọi bản quyền thuộc về chủ sở hữu gốc.",
+      "Chúng mình làm cho vui và phi lợi nhuận, mọi hình ảnh bản quyền đều thuộc sở hữu của các chủ sỡ hữu gốc!",
   },
 
   /* ---------- Mạng xã hội (link nào không dùng thì xoá dòng đó) ---------- */
   // Icon có sẵn: facebook, twitter, github, youtube, twitch,
   //              discord, tiktok, instagram, mail
   socials: [
-    { name: "Facebook", icon: "facebook", url: "https://facebook.com/" },
-    { name: "Twitter / X", icon: "twitter", url: "https://x.com/" },
-    { name: "Email", icon: "mail", url: "mailto:hello@example.com" },
+    { name: "Facebook", icon: "facebook", url: "https://www.facebook.com/jumpin.project/" },
+    { name: "Email", icon: "mail", url: "mailto:contact@jumpinproject.space" },
   ],
 
   /* ---------- PROJECT / EVENT đã làm ---------- */
@@ -35,63 +25,13 @@ window.SITE = {
   // cover: ảnh bìa, để trống "" thì hiện khối màu gradient
   projects: [
     {
-      title: "Jumpin Fes 2025",
-      year: "2025",
-      status: "done",
-      cover: "",
+      title: "Smile in Bloom",
+      year: "6/2026",
+      status: "Finished",
+      cover: "assets/sib.jpg",
       summary:
-        "Offline fes đầu tiên của team: gian hàng, sân khấu cover và khu giao lưu cho hơn 800 khách tham dự.",
-      tags: ["Offline", "Festival", "Cosplay"],
-      link: "",
-    },
-    {
-      title: "Charity Stream Night",
-      year: "2025",
-      status: "done",
-      cover: "",
-      summary:
-        "Chuỗi livestream gây quỹ cộng đồng, toàn bộ đóng góp được chuyển đến tổ chức thiện nguyện đối tác.",
-      tags: ["Online", "Gây quỹ"],
-      link: "",
-    },
-    {
-      title: "Fan Art Contest #3",
-      year: "2024",
-      status: "done",
-      cover: "",
-      summary:
-        "Cuộc thi vẽ tranh thường niên, nhận hơn 200 bài dự thi và triển lãm online cho toàn bộ tác phẩm.",
-      tags: ["Contest", "Fan art"],
-      link: "",
-    },
-    {
-      title: "Birthday Project",
-      year: "2024",
-      status: "done",
-      cover: "",
-      summary:
-        "Dự án mừng sinh nhật nhân vật: bảng LED, MV tổng hợp lời chúc và bộ quà tặng dành cho fan.",
-      tags: ["Online", "Media"],
-      link: "",
-    },
-    {
-      title: "Community Tournament",
-      year: "2026",
-      status: "ongoing",
-      cover: "",
-      summary:
-        "Giải đấu cộng đồng nhiều vòng, phát sóng trực tiếp kèm bình luận và phần quà cho người tham gia.",
-      tags: ["Giải đấu", "Livestream"],
-      link: "",
-    },
-    {
-      title: "Jumpin Fes 2026",
-      year: "2026",
-      status: "upcoming",
-      cover: "",
-      summary:
-        "Phiên bản mở rộng của fes với sân khấu lớn hơn, workshop và khu vực trải nghiệm mới. Đang chuẩn bị.",
-      tags: ["Offline", "Festival"],
+        "Nơi niềm vui và nụ cười nở rộ. Fanbooth/Off-fan đầu tiên của cộng đồng fan MORE MORE JUMP! Việt Nam!",
+      tags: ["Offline", "Off-fan"],
       link: "",
     },
   ],
@@ -101,68 +41,51 @@ window.SITE = {
   // socials: link riêng của thành viên (dùng chung bộ icon ở trên)
   members: [
     {
-      name: "Mune",
-      role: "Founder / Leader",
-      bio: "Điều phối tổng thể, lên kế hoạch và làm việc với đối tác.",
-      avatar: "",
-      socials: [{ icon: "twitter", url: "https://x.com/" }],
+      name: "Aoba",
+      role: "Event Staff",
+      bio: "Đại diện cho các phát biểu cũng như thông báo về các project sắp tới của team.",
+      avatar: "assets/aoba.jpg",
     },
     {
-      name: "Aki",
-      role: "Event Manager",
-      bio: "Phụ trách vận hành event, timeline và nhân sự ngày chạy chương trình.",
+      name: "?",
+      role: "?",
+      bio: "?",
       avatar: "",
-      socials: [{ icon: "facebook", url: "https://facebook.com/" }],
     },
     {
-      name: "Rin",
-      role: "Design Lead",
-      bio: "Thiết kế poster, key visual và toàn bộ ấn phẩm truyền thông.",
+      name: "?",
+      role: "?",
+      bio: "?",
       avatar: "",
-      socials: [{ icon: "twitter", url: "https://x.com/" }],
     },
     {
-      name: "Kaito",
-      role: "Developer",
-      bio: "Làm website, cổng đăng ký và các công cụ nội bộ cho team.",
+      name: "?",
+      role: "?",
+      bio: "?",
       avatar: "",
-      socials: [{ icon: "twitter", url: "https://x.com/" }],
     },
     {
-      name: "Miku",
-      role: "Media / Editor",
-      bio: "Dựng video, quay hậu trường và quản lý kênh truyền thông.",
+      name: "?",
+      role: "?",
+      bio: "?",
       avatar: "",
-      socials: [{ icon: "facebook", url: "https://facebook.com/" }],
-    },
-    {
-      name: "Len",
-      role: "Community Mod",
-      bio: "Hỗ trợ thành viên, giải đáp thắc mắc và giữ không khí cộng đồng.",
-      avatar: "",
-      socials: [{ icon: "mail", url: "mailto:hello@example.com" }],
-    },
   ],
 
-  /* ---------- Trang "Liên hệ" (hợp tác / tham gia team) ---------- */
+  /* ---------- Trang "Liên hệ" ---------- */
   contact: {
     intro:
       "Team nhận hợp tác tổ chức event, tài trợ và các đề xuất hoạt động cộng đồng. Nếu bạn muốn đồng hành, gửi thông tin cho chúng mình nhé.",
     items: [
       {
-        title: "Hợp tác tổ chức event",
-        desc: "Cùng tổ chức offline, online hoặc gian hàng tại sự kiện của bạn.",
+        title: "Hợp tác/Collab tổ chức event",
+        desc: "Cùng tổ chức offline, online hoặc bất cứ hoạt động gì cùng với nhau!",
       },
       {
-        title: "Tài trợ & quà tặng",
-        desc: "Hỗ trợ quà tặng, địa điểm hoặc chi phí vận hành cho event phi lợi nhuận.",
-      },
-      {
-        title: "Tham gia team",
-        desc: "Tuyển tình nguyện viên cho các vị trí design, media, vận hành và kỹ thuật.",
+        title: "Tài trợ",
+        desc: "Hỗ trợ merch, địa điểm hoặc chi phí cho event của chúng mình hay đại loại thế",
       },
     ],
-    email: "hello@example.com",
+    email: "contact@jumpinproject.com",
     formUrl: "", // dán link Google Form vào đây nếu có
   },
 };
