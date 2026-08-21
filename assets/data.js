@@ -43,7 +43,7 @@ window.SITE = {
     {
       name: "Aoba",
       role: "Event Staff",
-      bio: "Đại diện cho các phát biểu cũng như thông báo về các project sắp tới của team.",
+      bio: "Đại diện cho các phát biểu cũng như thông báo về các project sắp tới của team. Đến từ MinoriHopeClover!!",
       avatar: "assets/Aoba.jpg",
     },
     {
