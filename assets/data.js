@@ -49,7 +49,7 @@ window.SITE = {
     {
       name: "Winku",
       role: "Event Staff",
-      bio: "Đại diện đến từ UmaKatsu. UmaYume bu cac btw",
+      bio: "Đại diện đến từ UmaKatsu. Gánh hầu hết các project liên quan tới Uma Musume của team.",
       avatar: "",
     },
     {
