@@ -50,13 +50,13 @@ window.SITE = {
       name: "Winku",
       role: "Event Staff",
       bio: "Đại diện đến từ UmaKatsu. UmaYume bu cac btw",
-      avatar: "assets/Aoba.jpg",
+      avatar: "",
     },
     {
-      name: "Winku",
-      role: "Event Staff",
-      bio: "Đại diện đến từ UmaKatsu. UmaYume bu cac btw",
-      avatar: "assets/Aoba.jpg",
+      name: "?",
+      role: "?",
+      bio: "?",
+      avatar: "",
     },
     {
       name: "?",
