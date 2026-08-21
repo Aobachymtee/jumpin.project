@@ -53,7 +53,7 @@ window.SITE = {
       avatar: "assets/Winku.jpg",
     },
     {
-      name: "?",
+      name: "??",
       role: "?",
       bio: "?",
       avatar: "",
