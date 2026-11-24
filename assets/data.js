@@ -56,6 +56,12 @@ window.SITE = {
       name: "Elaige",
       role: "Event Staff/Host",
       bio: "Photographer, MC, Cái gì cũng gánh được. Cũng như gánh hết các project về Bandori của team.",
+      avatar: "assets/Aoba.jpg",
+    },
+    {
+      name: "?",
+      role: "?",
+      bio: "?",
       avatar: "",
     },
     {
