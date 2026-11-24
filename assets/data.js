@@ -31,8 +31,18 @@ window.SITE = {
       cover: "assets/sib.jpg",
       summary:
         "Nơi niềm vui và nụ cười nở rộ. Fanbooth/Off-fan đầu tiên của cộng đồng fan MORE MORE JUMP! Việt Nam!",
-      tags: ["Offline", "Off-fan"],
+      tags: ["Off-Fan", "Fanbooth"],
       link: "",
+    },
+    {
+      title: "Umakatsu Meetup",
+      year: "10/2026",
+      status: "Finished",
+      cover: "assets/Umakatsu.jpg",
+      summary:
+        "Hosted by: Umakatsu (Winku) - Một trong những offline Umamusume được tổ chức tại TP.HCM (Hôm ấy peak vcl)",
+      tags: ["Offline", "Off-fan"],
+      link: "https://www.facebook.com/photo/?fbid=122197470992939923&set=a.122196743690939923",
     },
   ],
 
