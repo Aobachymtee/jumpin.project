@@ -44,6 +44,16 @@ window.SITE = {
       tags: ["Offline", "Off-fan"],
       link: "https://www.facebook.com/photo/?fbid=122197470992939923&set=a.122196743690939923",
     },
+    {
+      title: "Jumpin Forever",
+      year: "11/2026",
+      status: "Finished",
+      cover: "assets/JumpinForever.jpg",
+      summary:
+        "More Dreams, More Smiles, Jumpin Forever!",
+      tags: ["Fanbooth", "Off-fan"],
+      link: "https://www.facebook.com/photo.php?fbid=1099983392822203&set=pb.100084316573186.-2207520000&type=3",
+    },
   ],
 
   /* ---------- THÀNH VIÊN ---------- */
