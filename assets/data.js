@@ -42,20 +42,20 @@ window.SITE = {
   members: [
     {
       name: "Aoba",
-      role: "Event Staff",
+      role: "Event Staff/Host",
       bio: "Đại diện cho các phát biểu cũng như thông báo về các project sắp tới của team. Đến từ MinoriHopeClover!!",
       avatar: "assets/Aoba.jpg",
     },
     {
       name: "Winku",
-      role: "Event Staff",
+      role: "Event Staff/Host",
       bio: "Đại diện đến từ UmaKatsu. Gánh hầu hết các project liên quan tới Uma Musume của team.",
       avatar: "assets/Winku.png",
     },
     {
-      name: "??",
-      role: "?",
-      bio: "?",
+      name: "Elaige",
+      role: "Event Staff/Host",
+      bio: "Photographer, MC, Cái gì cũng gánh được. Cũng như gánh hết các project về Bandori của team.",
       avatar: "",
     },
     {
